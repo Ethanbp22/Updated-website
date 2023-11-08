@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <section>
+        <img src="https://i.pinimg.com/originals/d1/d7/70/d1d770aa29da20467e4ac9bda70d8aef.png"  alt="Logo">
+    </section>
+
+    <title>Tech Support Hub</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Support Hub</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Tech Support Hub</h1>
+    </header>
+    <section>
+        <p>This website is your go-to resource for daily tech support tasks.</p>
+        <p>Instructions on how to use the website:</p>
+        <ul>
+            <li>Click on the navigation links to access forms and documentation.</li>
+            <li>Contact us at <a href="mailto:ithelp@techsupport.com">ithelp@techsupport.com</a> for assistance.</li>
+        </ul>
+    </section> 
+    
+    <section>
+        <h2>Navigation Links</h2>
+        <ul>
+        <li><a href="Copy of XHIS5122MM _Asset Register 1.pdf" target="_blank">Asset Register</a></li>
+        <li><a href="#escalation-procedure" target="_blank">Escalation Procedure</a></li>
+        <li><a href="#Tech Request Form" target="_blank">Tech Request Form</a></li>
+        <li><a href="#Escalation of Calls from Front Line Support" target="_blank">Escalation of Calls from Front Line Support</a></li>
+        <li><a href="#troubleshoting-questions">Troubleshoot Questions</a></li>
+    </ul>
+    </section>
+    
+    <section id="escalation-procedure">
+        <h2>Support Call Escalation Procedure</h2>
+        <ol>
+            <li>
+                <h3>Front-Line Support:</h3>
+                <p>Criteria for Escalation:</p>
+                <ul>
+                    <li>Front-line support should attempt to resolve common and known issues using standard procedures.</li>
+                    <li>Escalation may be necessary when an issue falls outside the scope of front-line support or requires specialized knowledge or resources.</li>
+                </ul>
+                <p>Examples of Escalation Criteria:</p>
+                <ul>
+                    <li>Technical issue is complex and not covered by the standard troubleshooting guide.</li>
+                    <li>Customer reports a critical system outage affecting multiple users.</li>
+                    <li>Support agent lacks the necessary expertise or access to resolve the problem.</li>
+                    <li>Issue requires further investigation or diagnostics beyond front-line capabilities.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Second-Level Support:</h3>
+                <p>Criteria for Escalation:</p>
+                <ul>
+                    <li>Second-level support is responsible for handling more complex technical issues that require in-depth expertise or access to specialized tools and resources.</li>
+                    <li>Escalation to third-level support should occur when the issue remains unresolved at the second level or requires even more specialized knowledge or resources.</li>
+                </ul>
+                <p>Examples of Escalation Criteria:</p>
+                <ul>
+                    <li>The issue involves complex software bugs that require development expertise.</li>
+                    <li>Extensive troubleshooting has been performed at the second level, but the problem persists.</li>
+                    <li>Escalation to third-level support may be triggered by issues related to critical infrastructure components.</li>
+                </ul>
+            </li>
+            <li>
+                <h3>Third-Level Support:</h3>
+                <p>Criteria for Escalation:</p>
+                <ul>
+                    <li>Third-level support is the highest level of technical expertise within the support organization. Calls are escalated to this level when the issue requires highly specialized knowledge or resources.</li>
+                    <li>Escalation to third-level support is typically reserved for the most complex and critical problems.</li>
+                </ul>
+                <p>Examples of Escalation Criteria:</p>
+                <ul>
+                    <li>The issue involves rare and highly technical problems that require expert-level knowledge.</li>
+                    <li>Extensive troubleshooting at the second level and collaboration with third-party vendors have been exhausted.</li>
+                    <li>The issue involves security breaches or major data loss that requires immediate attention.</li>
+                </ul>
+            </li>
+        </ol>
+        
+    </section>
+</body>
+<head>
+    <body>
+    
+    <section id="Tech Request Form">
+        <div class="logo-and-text">
+            <img src="https://i.pinimg.com/originals/d1/d7/70/d1d770aa29da20467e4ac9bda70d8aef.png" alt="Logo" width="60" height="60">
+            <h2 style="color: green; display: inline-block; vertical-align: middle; margin-left: 10px;">Tech Support Request Form</h2>
+        </div>
+            <h4>Requester</h4>
+    <form action="submit_request.php" method="post">
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" required><br><br>
+        
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" required><br><br>
+        
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="alt_phone">Alt Phone:</label>
+        <input type="tel" id="alt_phone" name="alt_phone"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="date">Date of Request:</label>
+        <input type="date" id="date" name="date_of_request" required><br><br>
+        
+        <label for="type_of_request"><h4>Type of Request:</h4></label>
+        <input type="radio" id="software" name="type_of_request" value="Software" required> Software
+        <input type="radio" id="hardware" name="type_of_request" value="Hardware" required> Hardware
+        <input type="radio" id="network" name="type_of_request" value="Network" required> Network
+        <input type="radio" id="other" name="type_of_request" value="Other" required> Other<br><br>
+        
+        <label for="priority"><h4>Priority Level:</h4></label>
+        <input type="radio" id="software_priority" name="priority_level" value="Software" required> Software
+        <input type="radio" id="hardware_priority" name="priority_level" value="Hardware" required> Hardware
+        <input type="radio" id="network_priority" name="priority_level" value="Network" required> Network
+        <input type="radio" id="other_priority" name="priority_level" value="Other" required> Other<br><br>
+        
+        <label for="description"><h4>Description of Request:</h4></label><br>
+        <textarea id="description" name="description" rows="5" cols="40"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+
+
+    </form>
+    <img src="https://i.pinimg.com/originals/d1/d7/70/d1d770aa29da20467e4ac9bda70d8aef.png"  alt="Logo" width="80" length="100">
+    </section>
+
+    <section id="Escalation of Calls from Front Line Support">
+        <h2>Support Call Escalation Process</h2>
+        <img src="https://i.pinimg.com/originals/9d/78/73/9d78736d7110e418e5ea988428fa0427.png"  alt="logo">
+        <ol>
+            <li>
+                <h3>Front-Line Support:</h3>
+                <p>Escalation Process: When an issue meets the escalation criteria, it should be escalated to the second-level support team. Front-line support agents provide basic troubleshooting and assistance.</p>
+            </li>
+            <li>
+                <h3>Second-Level Support:</h3>
+                <p>Escalation Process: Second-level support experts perform in-depth troubleshooting. When an issue meets the criteria for second-level support, it should be escalated to the third-level support team.</p>
+            </li>
+            <li>
+                <h3>Third-Level Support:</h3>
+                <p>Escalation Process: When issues are extremely complex, critical, or involve highly specialized knowledge. Resolution of the most challenging and specialized issues occurs at this level.</p>
+            </li>
+        </ol>
+    </section>
+
+    <section id="troubleshoting-questions">
+        <h2>Troubleshooting</h2>
+        <ol>
+                <li> Can you describe the problem in detail?</li>
+                <li> Have you tried restarting the device?</li>
+                <li> Is the issue occurring consistently, or is it intermittent?</li>
+                <li> Did this issue start after any recent updates or changes?</li>
+                <li> Have you checked for software updates or patches?</li>
+                <li> Is the problem specific to certain applications or tasks?</li>
+                <li> Are there any unusual noises or hardware issues?</li>
+                <li> Have you tried using the device on another network?</li>
+                <li> Can you provide the model and version information of your device?</li>  
+                <li> Have you recently installed any new software or hardware?</li>
+                <li> Have you cleared cache and cookies (if applicable)?</li>
+                <li> Have you tested the issue on a different user account (if applicable)?</li>
+                <li> Is there anything else you think might be relevant?</li>            
+        
+        </ol>
+    </section>
+    
+    <section>
+        <img src="https://i.pinimg.com/originals/d1/d7/70/d1d770aa29da20467e4ac9bda70d8aef.png"  alt="Logo">
+    </section>
+
+</head>
+</body>
+</html>
